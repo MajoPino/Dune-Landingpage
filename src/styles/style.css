@@ -29,10 +29,13 @@
 
 main {
     background-color: #000000;
+    display: inline-block;
+
 }
 
 .dunehome {
-    height: 1200px;
+    height: 1000px;
+    margin: 0px;
     background-image: url(../../public/img/dune-background.webp);
     background-repeat: no-repeat;
     background-size: 2000px;
@@ -55,9 +58,10 @@ main {
 
         & a {
             color: #fae8d0;
-            font-weight: lighter;
+            font-weight: 300;
             text-decoration: none;
             height: 30px;
+            width: 600px;
             padding: 5px;
             border: 1px solid #fae8d0;
             border-radius: 20px;
@@ -71,23 +75,34 @@ main {
     }
 }
 
+.dunemain {
+    height: 1000px;
+    width: 100vw;
+    margin: 0;
+    padding: 30px;
+    background-image: url(../../public/img/night-sand.webp);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 aside {
-    margin: 30px;
+    height: 250px;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     position: sticky;
-    top:0;
+    top: 10px;
     right: 0;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top:0;
-    right: 0;
     align-items: end;
+    height: 220px;
     width: 130px;
     padding: 10px;
     font-family: "Reddit Mono", monospace;
@@ -103,7 +118,7 @@ aside {
     }
 
     & a:hover {
-        font-weight: 400;
+        font-weight: 500;
         font-size: small;
     }
 }
@@ -121,6 +136,50 @@ aside {
     text-align: right;
 }
 
+.textmain {
+    position: relative;
+    bottom: 150px;
+    font-family: "Reddit Mono", monospace;
+    font-style: normal;
+    color: #fae8d0;
+
+    & h4 {
+        font-weight: 400;
+        font-size: x-large;
+    }
+
+    & h1 {
+        font-weight: 900;
+        font-size: 300%;
+        letter-spacing: 0.35em;
+        word-spacing: 0.35em;
+    }
+    & p{
+        font-weight: 300;
+    }
+}
+.sinopsis-dune{
+    
+}
+
 footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     background-color: #000000;
+    font-family: "Reddit Mono", monospace;
+    color: #fae8d0;
+    font-weight: 300;
+}
+.nameauthor{
+    color: #eb6d24;
+    text-decoration: none;
+}
+.nameauthor:hover{
+    color: #ffb23e;
+}
+.redes{
+    & a{
+        color: #fae8d0;
+    }
 }
