@@ -1,34 +1,37 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #010000;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #f36830;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #DF3B06;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #aa450a;
-  }
-main{
+}
+
+main {
     background-color: #000000;
-  }
-.dunehome{
+}
+
+.dunehome {
     height: 1200px;
     background-image: url(../../public/img/dune-background.webp);
     background-repeat: no-repeat;
@@ -40,14 +43,17 @@ main{
     font-family: "Reddit Mono", monospace;
     font-style: normal;
     color: #fae8d0;
-    & div{
+
+    & div {
         position: relative;
         top: 20%;
-        & h2{
+
+        & h2 {
             font-weight: lighter;
             font-size: xx-large;
         }
-        & a{
+
+        & a {
             color: #fae8d0;
             font-weight: lighter;
             text-decoration: none;
@@ -56,13 +62,65 @@ main{
             border: 1px solid #fae8d0;
             border-radius: 20px;
         }
-        & a:hover{
+
+        & a:hover {
             background-color: #d46220;
             color: #000000;
             font-weight: 300;
         }
     }
 }
-footer{
+
+aside {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    position: sticky;
+    top:0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top:0;
+    right: 0;
+    align-items: end;
+    width: 130px;
+    padding: 10px;
+    font-family: "Reddit Mono", monospace;
+    border: 1px solid #fae8d0;
+    border-radius: 20px;
+
+    & a {
+        color: #fae8d0;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: small;
+        margin-bottom: 10px;
+    }
+
+    & a:hover {
+        font-weight: 400;
+        font-size: small;
+    }
+}
+
+.eclipse {
+    height: 65px;
+    width: 100px;
+    position: relative;
+    left: 25px;
+}
+
+
+.text2 {
+    width: 70px;
+    text-align: right;
+}
+
+footer {
     background-color: #000000;
 }
