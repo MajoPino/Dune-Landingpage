@@ -30,6 +30,7 @@
 main {
     background-color: #000000;
     display: inline-block;
+    max-width: 2000px;
 
 }
 
@@ -159,7 +160,69 @@ aside {
     }
 }
 .sinopsis-dune{
-    
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 2000px;
+    background-image: url(../../public/img/paul-yellow-bg-1.webp);
+    background-repeat: no-repeat;
+    background-size: 2200px;
+}
+.navbar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 220px;
+    width: 130px;
+    padding: 10px;
+    font-family: "Reddit Mono", monospace;
+    border: 1px solid #010000;
+    border-radius: 20px;
+
+    & a {
+        color: #010000;
+        text-decoration: none;
+        font-weight: light;
+        font-size: small;
+        margin-bottom: 10px;
+    }
+
+    & a:hover {
+        font-weight: 600;
+        font-size: small;
+    }
+}
+
+.eclipse {
+    height: 65px;
+    width: 100px;
+    position: relative;
+    left: 25px;
+}
+
+
+.text2 {
+    width: 70px;
+    text-align: right;
+}
+
+.textduneone {
+    position: relative;
+    bottom: 150px;
+    font-family: "Reddit Mono", monospace;
+    font-style: normal;
+    color: #270b03;
+
+    & h2 {
+        font-weight: 900;
+        font-size: 300%;
+        letter-spacing: 0.20em;
+    }
+    & p{
+        font-weight: 400;
+    }
 }
 
 footer {
