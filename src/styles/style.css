@@ -1,53 +1,57 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
+/* Reset css */
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
 
+/* Define environment variables */
+:root{
+    --lava: #DF3B06; 
+    --smoothorange: #E36904;
+    --black: #010000;
+    --sandwhite: #fae8d0;
+    --transparentnight: #0c0e16a8;
+    --sepiablack: #270b03;
+    --transparentbrown: #3b1004b9;
+    --redditmono: "Reddit Mono", monospace;
+}
+
+/* Css for the scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #010000;
+    background: var(--black);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #DF3B06;
+    background: var(--lava);
     border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #aa450a;
+    background: var(--smoothorange);
 }
 
-main {
-    background-color: #000000;
-    display: inline-block;
-    max-width: 2000px;
-
-}
-
+/* Css for the section home*/
 .dunehome {
-    height: 1000px;
-    margin: 0px;
+    height: 100vh;
     background-image: url(../../public/img/dune-background.webp);
-    background-repeat: no-repeat;
-    background-size: 2000px;
+    background-size: cover;
     padding: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-family: "Reddit Mono", monospace;
+    font-family: var(--redditmono);
     font-style: normal;
-    color: #fae8d0;
+    color: var(--sandwhite);
 
+    /*Modify the div of the section home*/
     & div {
         position: relative;
         top: 20%;
@@ -58,38 +62,40 @@ main {
         }
 
         & a {
-            color: #fae8d0;
+            color: var(--sandwhite);
             font-weight: 300;
             text-decoration: none;
             height: 30px;
             width: 600px;
             padding: 5px;
-            border: 1px solid #fae8d0;
+            border: 1px solid var(--sandwhite);
             border-radius: 20px;
         }
 
         & a:hover {
-            background-color: #d46220;
-            color: #000000;
+            background-color: var(--smoothorange);
+            color: var(--black);
             font-weight: 300;
         }
     }
 }
 
+/* Css for the section main/introduction*/
 .dunemain {
-    height: 1000px;
-    width: 100vw;
-    margin: 0;
+    height: 100vh;
     padding: 30px;
     background-image: url(../../public/img/night-sand.webp);
     background-repeat: no-repeat;
-    background-size: 2000px;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Css for the navbar of the section  main/introduction*/
+/* Css for the aside*/
 aside {
     height: 250px;
+    z-index: 300;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +104,7 @@ aside {
     top: 10px;
     right: 0;
 }
-
+/* Css for the navbar*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -106,12 +112,13 @@ aside {
     height: 220px;
     width: 130px;
     padding: 10px;
-    font-family: "Reddit Mono", monospace;
-    border: 1px solid #fae8d0;
+    font-family: var(--redditmono);
+    border: 1px solid var(--sandwhite);
+    background-color: var(--transparentnight);
     border-radius: 20px;
 
     & a {
-        color: #fae8d0;
+        color: var(--sandwhite);
         text-decoration: none;
         font-weight: lighter;
         font-size: small;
@@ -124,6 +131,7 @@ aside {
     }
 }
 
+/* Anchor eclipse*/
 .eclipse {
     height: 65px;
     width: 100px;
@@ -140,9 +148,9 @@ aside {
 .textmain {
     position: relative;
     bottom: 150px;
-    font-family: "Reddit Mono", monospace;
+    font-family: var(--redditmono);
     font-style: normal;
-    color: #fae8d0;
+    color: var(--sandwhite);
 
     & h4 {
         font-weight: 400;
@@ -157,19 +165,22 @@ aside {
     }
     & p{
         font-weight: 300;
+        background-color: var(--transparentnight);
     }
 }
+
+/* Css for the section Sinopsis DUNE*/
 .sinopsis-dune{
-    height: 1000px;
-    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
     max-width: 2000px;
     background-image: url(../../public/img/paul-yellow-bg-1.webp);
     background-repeat: no-repeat;
-    background-size: 2200px;
+    background-size: cover;
 }
+/* Css for the navbar of the section Sinopsis DUNE*/
 .navbar2 {
     display: flex;
     flex-direction: column;
@@ -177,12 +188,13 @@ aside {
     height: 220px;
     width: 130px;
     padding: 10px;
-    font-family: "Reddit Mono", monospace;
-    border: 1px solid #010000;
+    font-family: var(--redditmono);
+    border: 1px solid var(--black);
+    background-color: var(--transparentbrown);
     border-radius: 20px;
 
     & a {
-        color: #010000;
+        color: var(--sandwhite);
         text-decoration: none;
         font-weight: light;
         font-size: small;
@@ -211,9 +223,9 @@ aside {
 .textduneone {
     position: relative;
     bottom: 150px;
-    font-family: "Reddit Mono", monospace;
+    font-family: var(--redditmono);
     font-style: normal;
-    color: #270b03;
+    color: var(--sepiablack);
 
     & h2 {
         font-weight: 900;
@@ -224,25 +236,40 @@ aside {
         font-weight: 400;
     }
 }
+/* Css for the section Sinopsis DUNEII*/
+.sinopsis-dunetwo{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 2000px;
+    background-image: url(../../public/img/paul-yellow-bg-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+/* Css for the footer*/
 footer {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #000000;
-    font-family: "Reddit Mono", monospace;
-    color: #fae8d0;
+    background-color: var(--black);
+    font-family: var(--redditmono);
+    color: var(--sandwhite);
     font-weight: 300;
 }
 .nameauthor{
-    color: #eb6d24;
+    color: var(--lava);
     text-decoration: none;
 }
 .nameauthor:hover{
-    color: #ffb23e;
+    color: var(--smoothorange);
 }
 .redes{
     & a{
-        color: #fae8d0;
+        color: var(--sandwhite);
+    }
+    & a:hover{
+        color: var(--smoothorange);
     }
 }
