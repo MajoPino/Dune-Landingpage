@@ -79,30 +79,18 @@
         }
     }
 }
-
-/* Css for the section main/introduction*/
-.dunemain {
-    height: 100vh;
-    padding: 30px;
-    background-image: url(../../public/img/night-sand.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* Css for the navbar of the section  main/introduction*/
 /* Css for the aside*/
-aside {
+nav {
     height: 250px;
     z-index: 300;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    position: sticky;
-    top: 10px;
-    right: 0;
+    position: fixed;
+    top: 20px;
+    right: 30px;
 }
 /* Css for the navbar*/
 .navbar {
@@ -139,15 +127,24 @@ aside {
     left: 25px;
 }
 
-
+/* Css for the large texts*/
 .text2 {
     width: 70px;
     text-align: right;
 }
 
+
+/* Css for the section main/introduction*/
+.dunemain {
+    height: 100vh;
+    padding: 30px;
+    background-image: url(../../public/img/night-sand.webp);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .textmain {
-    position: relative;
-    bottom: 150px;
     font-family: var(--redditmono);
     font-style: normal;
     color: var(--sandwhite);
@@ -177,52 +174,11 @@ aside {
     padding: 30px;
     max-width: 2000px;
     background-image: url(../../public/img/paul-yellow-bg-1.webp);
-    background-repeat: no-repeat;
     background-size: cover;
-}
-/* Css for the navbar of the section Sinopsis DUNE*/
-.navbar2 {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    height: 220px;
-    width: 130px;
-    padding: 10px;
-    font-family: var(--redditmono);
-    border: 1px solid var(--black);
-    background-color: var(--transparentbrown);
-    border-radius: 20px;
-
-    & a {
-        color: var(--sandwhite);
-        text-decoration: none;
-        font-weight: light;
-        font-size: small;
-        margin-bottom: 10px;
-    }
-
-    & a:hover {
-        font-weight: 600;
-        font-size: small;
-    }
-}
-
-.eclipse {
-    height: 65px;
-    width: 100px;
-    position: relative;
-    left: 25px;
-}
-
-
-.text2 {
-    width: 70px;
-    text-align: right;
+    align-content: center;
 }
 
 .textduneone {
-    position: relative;
-    bottom: 150px;
     font-family: var(--redditmono);
     font-style: normal;
     color: var(--sepiablack);
@@ -241,6 +197,7 @@ aside {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     padding: 30px;
     max-width: 2000px;
     background-image: url(../../public/img/paul-yellow-bg-1.webp);
