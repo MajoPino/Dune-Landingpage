@@ -1,12 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
+/* -------------------------------------- */
+
 /* Reset css */
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
+/* -------------------------------------- */
 
 /* Define environment variables */
 :root {
@@ -19,6 +22,7 @@
     --transparentbrown: #3b1004b9;
     --redditmono: "Reddit Mono", monospace;
 }
+/* -------------------------------------- */
 
 /* Css for the scrollbar*/
 ::-webkit-scrollbar {
@@ -40,6 +44,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--smoothorange);
 }
+
+/* -------------------------------------- */
 
 /* Css for the section home*/
 .dunehome {
@@ -112,8 +118,10 @@ img {
         /* Sets a specific height when the screen is shorter */
     }
 }
+/* -------------------------------------- */
 
 /* Css for the navbar of the page principal*/
+
 /* Css for the div*/
 nav {
     height: 250px;
@@ -221,6 +229,8 @@ nav {
     }
 }
 
+/* -------------------------------------- */
+
 /* Css for the section Sinopsis DUNE*/
 .sinopsis-dune {
     min-height: 100vh;
@@ -230,14 +240,15 @@ nav {
     max-width: 2000px;
     background-image: url(../../public/img/paul-yellow-bg-1.webp);
     background-size: cover;
-    align-content: center;
+    align-content: left;
 }
-
 .textduneone {
     font-family: var(--redditmono);
     font-style: normal;
+    max-width: 1200px;
+    padding-bottom: 20px;
     
-
+    /* Title */
     & h2 {
         color: var(--sepiablack);
         font-weight: 900;
@@ -245,7 +256,8 @@ nav {
         letter-spacing: 0.20em;
     }
 
-    & p {
+    /* Paragraph */
+    & .info-sinopsis {
         color: var(--sandwhite);
         padding: 15px;
         background-color: var(--transparentbrown);
@@ -253,6 +265,20 @@ nav {
         font-weight: 400;
     }
 }
+/* Iframe of the trailer */
+.trailer-dune{
+    padding-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    & iframe{
+        height: 400px;
+    width: 600px;
+    min-height: 200px;
+    min-width: 400px;
+    }
+}
+
+/* -------------------------------------- */
 
 /* Css for the section Sinopsis DUNEII*/
 .sinopsis-dunetwo {

@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fan-page acerca de la película Dune del director Denis Villeneuve" />
@@ -15,30 +16,46 @@
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
+
+    <!-- Links to the icon and the stylesheet -->
     <link rel="shortcut icon" href="../../public/img/dune-eclipse.webp" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Page title -->
     <title>DuneFans</title>
 </head>
 
 <body>
-    <header><nav>
-                <li class="navbar">
-                    <a href="../../index.html"><img class="eclipse" src="../../public/img/dune-eclipse.webp"
-                            alt="dune-eclipse"></a>
-                    <a href="#dunemain">Introduction</a>
-                    <a href="#sinopsis-dune" class="text2">Sinopsis DUNE</a>
-                    <a href="#sinopsis-dunetwo" class="text2">Sinopsis DUNE II</a>
-                </li>
-            </nav></header>
+
     <!-- Body header -->
+    <header>
+        <!-- Floating navbar -->
+        <nav>
+            <li class="navbar">
+                <a href="../../index.html"><img class="eclipse" src="../../public/img/dune-eclipse.webp"
+                        alt="dune-eclipse"></a>
+                <a href="#dunemain">Introduction</a>
+                <a href="#sinopsis-dune" class="text2">Sinopsis DUNE</a>
+                <a href="#sinopsis-dunetwo" class="text2">Sinopsis DUNE II</a>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Body main -->
     <main>
+
+        <!-- First section of the page: 'main'/'introduction' -->
         <section class="dunemain" id="dunemain">
-            
+
             <article class="textmain">
+
+                <!-- Title -->
                 <div>
                     <h4>What is </h4>
                     <h1>DUNE</h1>
                 </div>
+
+                <!-- Paragraph -->
                 <div class="info">
                     <p>Dune is a 1965 epic science fiction novel by American author Frank Herbert, originally published
                         as two separate serials (1963-64 novel 'Dune World' and 1965 novel 'Prophet of Dune') in Analog
@@ -58,31 +75,57 @@
                         roughly the first half of the original novel; a sequel, which covers the second half of the
                         story, was released on March 1, 2024, to critical acclaim.</p>
                     <br>
-                    <a class="caption" href="https://en.wikipedia.org/wiki/Dune_(novel)#First_edition_prints_and_manuscripts" target="_blank">Information extracted from Wikipedia</a>
+
+                    <!-- Link to wikipedia -->
+                    <a class="caption"
+                        href="https://en.wikipedia.org/wiki/Dune_(novel)#First_edition_prints_and_manuscripts"
+                        target="_blank">Information extracted from Wikipedia</a>
                 </div>
             </article>
         </section>
+
+        <!-- Second section of the page: 'Sinopsis Dune I' -->
         <section class="sinopsis-dune" id="sinopsis-dune">
+
+            <!-- Title & Sinopsis of the first Dune movie -->
             <article class="textduneone">
+
                 <h2>DUNE PART I</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea nostrum doloremque nobis
-                    itaque
-                    culpa, voluptates perspiciatis quia distinctio corporis recusandae sit eius, blanditiis alias
-                    numquam,
-                    sed laboriosam vero velit.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea
-                    nostrum doloremque nobis itaque
-                    culpa, voluptates perspiciatis quia distinctio corporis recusandae sit eius, blanditiis alias
-                    numquam,
-                    sed laboriosam vero velit.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea
-                    nostrum doloremque nobis itaque
-                    culpa, voluptates perspiciatis quia distinctio corporis recusandae sit eius, blanditiis alias
-                    numquam,
-                    sed laboriosam vero velit.</p>
+
+                <div class="info-sinopsis">
+                    <p>First part of the Film Adaptation of Dune (1965) by Frank Herbert, directed by the Oscar
+                        Nominated Filmmaker Denis Villeneuve. It follows the story of the House Atreides. In the year
+                        10191, the noble houses dispute the domain of the planet Arrakis, the only place of the universe
+                        that the ‘spice’ can be found, the most wanted and valuable row material of the universe that is
+                        produced by titanic sized Sandworms, it is necessary to make possible the interestellar travel
+                        and it is also a drug able to amplify the human consciousness and extend the human life. Because
+                        of this and its risky extraction the ones who control the ‘spice’ production doesn’t control
+                        just the destiny of the empire, but of the whole humanity.</p>
+                    <br>
+                    <p>Duke Leto Atreides (Oscar Isaac) will accept the administration of this dangerous planet and will
+                        be sent to Arrakis by the Emperor along with his son Paul (Timothée Chalamet) and Lady Jessica
+                        (Rebecca Ferguson), his wife and member of the Bene Gesserit Order. It will then be when the
+                        Atreides family runs a great risk by being in the crosshairs of evil forces such as those of
+                        their enemy Baron Vladimir Harkonnen (Stellan Skarsgård), an ambitious and implacable governor
+                        whose greatest desire is to end the Atreides at all costs. They will soon find themselves
+                        involved in a plot of betrayal and deception that will lead them to question their trust among
+                        those closest to them and to value the locals, the Fremen, a lineage of desert inhabitants with
+                        a close relationship with spice.</p>
+                </div>
             </article>
+
+            <!-- Iframe for the trailer extracted from youtube -->
+            <article  class="trailer-dune">
+                <iframe src="https://www.youtube.com/embed/TTgk_iT8Uts"
+                    title="Duna - Trailer Oficial" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+
         </section>
         <section class="sinopsis-dunetwo" id="sinopsis-dunetwo">
             <article class="textdunetwo">
-                <h2>DUNE PART I</h2>
+                <h2>DUNE PART II</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea nostrum doloremque nobis
                     itaque
                     culpa, voluptates perspiciatis quia distinctio corporis recusandae sit eius, blanditiis alias
