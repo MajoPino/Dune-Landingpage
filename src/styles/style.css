@@ -124,7 +124,7 @@ img {
 
 /* Css for the div*/
 nav {
-    height: 250px;
+    height: 300px;
     z-index: 300;
     width: 100vw;
     display: flex;
@@ -140,7 +140,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: end;
-    height: 220px;
+    height: 270px;
     width: 130px;
     padding: 10px;
     font-family: var(--redditmono);
@@ -285,17 +285,18 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: left;
     padding: 30px;
     max-width: 2000px;
     background-image: url(../../public/img/dune-fight\ \(1\).jpeg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* Parragraph of the section*/
 .textdunetwo {
     font-family: var(--redditmono);
     font-style: normal;
+    max-width: 1200px;
+    padding-bottom: 20px;
 
     & h2 {
         color: var(--sepiablack);
@@ -313,6 +314,8 @@ nav {
     }
 }
 
+/* -------------------------------------- */
+
 /* Css for the footer*/
 footer {
     display: flex;
@@ -324,6 +327,7 @@ footer {
     font-weight: 300;
 }
 
+/* Author info*/
 .nameauthor {
     color: var(--lava);
     text-decoration: none;
@@ -333,6 +337,7 @@ footer {
     color: var(--smoothorange);
 }
 
+/* Social media*/
 .redes {
     & a {
         color: var(--sandwhite);
@@ -341,4 +346,54 @@ footer {
     & a:hover {
         color: var(--smoothorange);
     }
+}
+
+/* Form DuneFans*/
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    & form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        
+        & .input{
+            background-color: var(--sandwhite);
+            height: 30px;
+            max-width: 500px;
+            color: var(--sepiablack);
+            border-color: var(--sepiablack);
+            font-family: var(--redditmono);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        & textarea{
+            background-color: var(--sandwhite);
+            height: 100px;
+            max-width: 500px;
+            color: var(--sepiablack);
+            border: 2px solid;
+            border-color: var(--sepiablack);
+            font-family: var(--redditmono);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+.submit{
+            background-color: var(--lava);
+            height: 30px;
+            max-width: 500px;
+            color: var(--sepiablack);
+            border-color: var(--sepiablack);
+            font-family: var(--redditmono);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+.submit:hover{
+    background-color: var(--smoothorange);
 }
