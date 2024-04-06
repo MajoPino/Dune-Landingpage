@@ -9,8 +9,8 @@
 }
 
 /* Define environment variables */
-:root{
-    --lava: #DF3B06; 
+:root {
+    --lava: #DF3B06;
     --smoothorange: #E36904;
     --black: #010000;
     --sandwhite: #fae8d0;
@@ -43,10 +43,12 @@
 
 /* Css for the section home*/
 .dunehome {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../public/img/dune-background.webp);
     background-size: cover;
     padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
     font-family: var(--redditmono);
     font-style: normal;
     color: var(--sandwhite);
@@ -55,6 +57,11 @@
     & div {
         position: relative;
         top: 20%;
+        min-width: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
 
         & h2 {
             font-weight: lighter;
@@ -62,25 +69,52 @@
         }
 
         & a {
-            color: var(--sandwhite);
-            font-weight: 300;
             text-decoration: none;
-            height: 30px;
-            width: 600px;
-            padding: 5px;
-            border: 1px solid var(--sandwhite);
-            border-radius: 20px;
-        }
 
-        & a:hover {
-            background-color: var(--smoothorange);
-            color: var(--black);
-            font-weight: 300;
+            & p {
+                color: var(--sandwhite);
+                font-weight: 300;
+                height: auto;
+                max-width: 400px;
+                padding: 5px;
+                border: 1px solid var(--sandwhite);
+                border-radius: 20px;
+            }
+
+            & p:hover {
+                background-color: var(--smoothorange);
+                color: var(--black);
+                font-weight: 300;
+            }
         }
     }
 }
-/* Css for the navbar of the section  main/introduction*/
-/* Css for the aside*/
+
+/* Media queries for the Dune image */
+.dunelogo {
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its container's width */
+    overflow: hidden;
+    /* Hides any part of the image that exceeds the container */
+}
+
+img {
+    width: 100%;
+    /* Makes the image responsive */
+    height: auto;
+    /* Maintains the image's aspect ratio */
+}
+
+/* Media query for screens with a max-height of 600px */
+@media (max-height: 600px) {
+    .image-container {
+        max-height: 200px;
+        /* Sets a specific height when the screen is shorter */
+    }
+}
+
+/* Css for the navbar of the page principal*/
+/* Css for the div*/
 nav {
     height: 250px;
     z-index: 300;
@@ -89,9 +123,10 @@ nav {
     flex-wrap: wrap;
     justify-content: right;
     position: fixed;
-    top: 20px;
+    top: 123px;
     right: 30px;
 }
+
 /* Css for the navbar*/
 .navbar {
     display: flex;
@@ -105,6 +140,7 @@ nav {
     background-color: var(--transparentnight);
     border-radius: 20px;
 
+/*     Css for the anchors */
     & a {
         color: var(--sandwhite);
         text-decoration: none;
@@ -127,48 +163,67 @@ nav {
     left: 25px;
 }
 
-/* Css for the large texts*/
+/* Css for the large anchors*/
 .text2 {
     width: 70px;
     text-align: right;
 }
 
+/* -------------------------------------- */
 
 /* Css for the section main/introduction*/
 .dunemain {
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px;
     background-image: url(../../public/img/night-sand.webp);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: left;
 }
+
+/* Modify the text of the dunemain section */
 .textmain {
     font-family: var(--redditmono);
     font-style: normal;
     color: var(--sandwhite);
+    max-width: 1200px;
 
+    /* Subtitle */
     & h4 {
         font-weight: 400;
         font-size: x-large;
     }
 
+    /* Main title */
     & h1 {
         font-weight: 900;
         font-size: 300%;
         letter-spacing: 0.35em;
         word-spacing: 0.35em;
     }
-    & p{
+
+    /* Paragraph */
+    & .info {
+        padding: 12px;
+        min-width: 200px;
         font-weight: 300;
         background-color: var(--transparentnight);
+        border-radius: 20px;
+
+        /* Anchor to the wikipedia page */
+        & .caption{
+            font-style: italic;
+            font-size: small;
+            text-decoration: none;
+            color: var(--smoothorange);
+        }
     }
 }
 
 /* Css for the section Sinopsis DUNE*/
-.sinopsis-dune{
-    height: 100vh;
+.sinopsis-dune {
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -181,28 +236,55 @@ nav {
 .textduneone {
     font-family: var(--redditmono);
     font-style: normal;
-    color: var(--sepiablack);
+    
 
     & h2 {
+        color: var(--sepiablack);
         font-weight: 900;
         font-size: 300%;
         letter-spacing: 0.20em;
     }
-    & p{
+
+    & p {
+        color: var(--sandwhite);
+        padding: 15px;
+        background-color: var(--transparentbrown);
+        border-radius: 20px;
         font-weight: 400;
     }
 }
+
 /* Css for the section Sinopsis DUNEII*/
-.sinopsis-dunetwo{
-    height: 100vh;
+.sinopsis-dunetwo {
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     padding: 30px;
     max-width: 2000px;
-    background-image: url(../../public/img/paul-yellow-bg-1.webp);
+    background-image: url(../../public/img/dune-fight\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.textdunetwo {
+    font-family: var(--redditmono);
+    font-style: normal;
+
+    & h2 {
+        color: var(--sepiablack);
+        font-weight: 900;
+        font-size: 300%;
+        letter-spacing: 0.20em;
+    }
+
+    & p {
+        padding: 15px;
+        color: var(--sandwhite);
+        font-weight: 400;
+        background-color: var(--transparentbrown);
+        border-radius: 20px;
+    }
 }
 
 /* Css for the footer*/
@@ -215,18 +297,22 @@ footer {
     color: var(--sandwhite);
     font-weight: 300;
 }
-.nameauthor{
+
+.nameauthor {
     color: var(--lava);
     text-decoration: none;
 }
-.nameauthor:hover{
+
+.nameauthor:hover {
     color: var(--smoothorange);
 }
-.redes{
-    & a{
+
+.redes {
+    & a {
         color: var(--sandwhite);
     }
-    & a:hover{
+
+    & a:hover {
         color: var(--smoothorange);
     }
 }
