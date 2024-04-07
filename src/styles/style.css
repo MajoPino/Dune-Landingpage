@@ -319,6 +319,7 @@ nav {
 /* Css for the footer*/
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     background-color: var(--black);
